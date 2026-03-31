@@ -129,6 +129,9 @@ GameObject:
   m_Component:
   - component: {fileID: 16630425}
   - component: {fileID: 16630424}
+  - component: {fileID: 16630428}
+  - component: {fileID: 16630427}
+  - component: {fileID: 16630426}
   m_Layer: 0
   m_Name: Global Volume (1)
   m_TagString: Untagged
@@ -168,6 +171,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &16630426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16630423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d41abec3fee49804cba74a3c936ec442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TsukimiNeko.AnimatableVolumeComponent.AnimatableBloom
+  active: 1
+  override_threshold: 1
+  threshold: 0.9
+  override_intensity: 1
+  intensity: 9
+  override_scatter: 1
+  scatter: 0
+  override_clamp: 1
+  clamp: 65472
+  override_tint: 1
+  tint: {r: 0, g: 0.35986662, b: 1, a: 1}
+  override_highQualityFiltering: 1
+  highQualityFiltering: 0
+  override_filter: 1
+  filter: 0
+  override_downscale: 0
+  downscale: 0
+  override_maxIterations: 0
+  maxIterations: 6
+  override_dirtTexture: 1
+  dirtTexture: {fileID: 0}
+  override_dirtIntensity: 1
+  dirtIntensity: 0
+--- !u!114 &16630427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16630423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c8cbad0522cbdc43975d45482429ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TsukimiNeko.AnimatableVolumeComponent.AnimatableVolumeHelper
+--- !u!95 &16630428
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16630423}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &81549067
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,6 +371,7 @@ GameObject:
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
   - component: {fileID: 330585548}
+  - component: {fileID: 330585549}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -456,6 +529,25 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!320 &330585549
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 8118ccc33a5257243a71ce7f7f3b7331, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 1
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 7690613189735494924, guid: 8118ccc33a5257243a71ce7f7f3b7331, type: 2}
+    value: {fileID: 16630428}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
