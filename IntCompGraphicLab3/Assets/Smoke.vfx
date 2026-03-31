@@ -2930,7 +2930,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.0,"y":1.180711269378662,"z":8.286640167236329}'
+      m_SerializableObject: '{"x":0.0,"y":2.91320538520813,"z":19.872215270996095}'
     m_Space: -1
   m_Property:
     name: _Color
